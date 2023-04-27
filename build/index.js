@@ -1,3 +1,4 @@
+"use strict";
 function printObject(people) {
     console.log(people);
 }
