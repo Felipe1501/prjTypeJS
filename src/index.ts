@@ -37,3 +37,28 @@ let boleto1:[string, number, number]= ["conta do gás", 111.10, 12131554154];
 
 let niver:Date = new Date("2023-15-01 16:48");
 console.log(niver.toString());
+
+
+function addNumber(x: number, y:number):number{
+    return x + y;
+}
+
+let soma: number = addNumber(15, 1);
+
+console.log(soma);
+
+function addToHello(name: string): string{
+    return `Hello Hello ${name}`; 
+}
+
+console.log(addToHello("Felipe"));
+
+function CallToPhone(phone: number | string): number | string{
+    return phone;
+}
+
+console.log(CallToPhone("1134141414"));
+
+async function getDatabase(id: number): Promise<string> {
+    return "felipe";
+}
