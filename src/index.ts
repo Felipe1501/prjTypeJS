@@ -30,3 +30,7 @@ let nmProdut:produto = {
 
 let dados:string[] = ["felipe", "roger guedes", "peter parker", "drake"];
 let dados2: Array<string> = ["felipe", "roger guedes", "peter parker", "drake"];
+
+let boleto:(string | number)[] =  [3222, "felipe"];
+
+let boleto1:[string, number, number]= ["conta do gás", 111.10, 12131554154];
