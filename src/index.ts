@@ -34,3 +34,6 @@ let dados2: Array<string> = ["felipe", "roger guedes", "peter parker", "drake"];
 let boleto:(string | number)[] =  [3222, "felipe"];
 
 let boleto1:[string, number, number]= ["conta do gás", 111.10, 12131554154];
+
+let niver:Date = new Date("2023-15-01 16:48");
+console.log(niver.toString());
