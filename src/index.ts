@@ -9,3 +9,21 @@ let indef:undefined = undefined;
 
 let retorno:void;
 let retornoview:any = false;
+
+let testing:object = {
+    nome: "felipe",
+    city: "monga",
+    facul: "unisantos"
+}
+
+type produto = {
+    nome: string;
+    preco: number;
+    unid: number;
+}
+
+let nmProdut:produto = {
+    nome: "mouse gamer",
+    preco: 98.89,
+    unid: 15
+}
