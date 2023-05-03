@@ -1,15 +1,11 @@
-type hero = {
-    name: string;
-    vulgo: string;
-}
+let power:boolean = false;
+let nm:string = 'felipe';
+let year:number = 30;
+let nr:number = 30.15;
 
-function printObject(people: hero){
-    console.log(people);
-    
-}
+let nulo:null = null;
 
-printObject({
-    name: "peter parker",
-    vulgo: "homem aranha"
-});
+let indef:undefined = undefined;
 
+let retorno:void;
+let retornoview:any = false;
