@@ -27,3 +27,6 @@ let nmProdut:produto = {
     preco: 98.89,
     unid: 15
 }
+
+let dados:string[] = ["felipe", "roger guedes", "peter parker", "drake"];
+let dados2: Array<string> = ["felipe", "roger guedes", "peter parker", "drake"];
