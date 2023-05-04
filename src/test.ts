@@ -8,3 +8,5 @@ const stgArray = concatArray<string[]>(["yuri", "alberto"], ["felipe"]);
 
 console.log(numArray);
 console.log(stgArray);
+
+
