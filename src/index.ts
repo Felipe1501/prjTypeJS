@@ -98,12 +98,12 @@ console.log(people.sayHello());
 
 
 class Character {
-    name?: string;
-    streght: number;
-    skill: number;
+   private name?: string;
+   public streght: number;
+   protected skill: number;
 
-    constructor( streght: number, skill: number){
-        
+    constructor(name: string, streght: number, skill: number){
+        this.name = name;
         this.streght = streght;
         this.skill = skill;
     }
@@ -114,5 +114,5 @@ class Character {
     }
 }
 
-const p1 = new Character(10, 1501);
+const p1 = new Character("Hulk",10, 1501);
 p1.attack();
