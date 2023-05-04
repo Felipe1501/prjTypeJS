@@ -149,9 +149,39 @@ function apiVersion(version: string){
     }
 }
 
-@apiVersion("1.10")
-class Api{}
+function minLength(length: number){
+    return(target: any, key: string)=> {
+        let _value = (target[key]);
+        
+        const getter = () => "a " + _value + " é boa demais";
+        const setter = (value: string) => {
+            if(value.length < length){
+                throw new Error(`Tamanho menor do que ${length}`)
+            }else{
+                _value = value;
+            }
+        }
 
-const api = new Api();
-console.log(api.__name);
+        Object.defineProperty(target, key, {
+            get: getter,
+            set: setter,
+        });
+    }
+}
+
+@apiVersion("1.10")
+class Api{
+    @minLength(3)
+    name: string;
+    
+    constructor(name: string){
+        this.name = name;
+    }
+}
+
+const api = new Api("marvel");
+console.log(api.name);
+
+
+
 
