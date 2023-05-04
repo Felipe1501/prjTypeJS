@@ -62,3 +62,18 @@ console.log(CallToPhone("1134141414"));
 async function getDatabase(id: number): Promise<string> {
     return "felipe";
 }
+
+type robot = {
+    id: number;
+    name: string;
+}
+
+interface robot2 {
+    readonly id: number;
+    name: string
+}
+
+const robo: robot2 = {
+     id: 1,
+    name: "Alexa"
+}
