@@ -95,3 +95,24 @@ class Pessoa implements robot2{
 
 const people = new Pessoa(1, "yuri alberto");
 console.log(people.sayHello());
+
+
+class Character {
+    name?: string;
+    streght: number;
+    skill: number;
+
+    constructor( streght: number, skill: number){
+        
+        this.streght = streght;
+        this.skill = skill;
+    }
+
+    attack():void{
+        console.log(`Attack with ${this.streght} points`);
+        
+    }
+}
+
+const p1 = new Character(10, 1501);
+p1.attack();
