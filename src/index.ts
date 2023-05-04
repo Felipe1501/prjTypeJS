@@ -70,10 +70,28 @@ type robot = {
 
 interface robot2 {
     readonly id: number;
-    name: string
+    name: string;
+    sayHello():string;
 }
 
-const robo: robot2 = {
+const robo: robot = {
      id: 1,
     name: "Alexa"
 }
+
+class Pessoa implements robot2{
+    id: number;
+    name: string;
+
+    constructor(id: number, name: string){
+        this.id = id;
+        this.name = name;
+    }
+    sayHello(): string {
+        return `hello hello ${this.name}`;
+        
+    }
+}
+
+const people = new Pessoa(1, "yuri alberto");
+console.log(people.sayHello());
