@@ -100,7 +100,7 @@ console.log(people.sayHello());
 class Character {
    private name?: string;
    public streght: number;
-   protected skill: number;
+   protected readonly skill: number;
 
     constructor(name: string, streght: number, skill: number){
         this.name = name;
@@ -108,11 +108,26 @@ class Character {
         this.skill = skill;
     }
 
-    attack():void{
+    public attack():void{
         console.log(`Attack with ${this.streght} points`);
         
     }
 }
 
+class Magincian extends Character{
+    magicPoints:number;
+    constructor(
+        name: string, 
+        streght: number, 
+        skill: number, 
+        magicPoints: number
+        ){
+        super(name, streght, skill);
+        this.magicPoints = magicPoints;
+
+    }
+}
+
 const p1 = new Character("Hulk",10, 1501);
+const p2 = new Magincian("Doutor Estranho",14, 189, 100);
 p1.attack();
