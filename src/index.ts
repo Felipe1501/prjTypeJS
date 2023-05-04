@@ -128,6 +128,6 @@ class Magincian extends Character{
     }
 }
 
-const p1 = new Character("Hulk",10, 1501);
+const p1 = new Character("Hulk",30, 1501);
 const p2 = new Magincian("Doutor Estranho",14, 189, 100);
 p1.attack();
